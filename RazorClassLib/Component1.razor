@@ -1,0 +1,14 @@
+﻿
+@typeparam TItem
+
+<p>
+    Component 1 -> Style:@Style
+</p>
+
+@functions {
+
+    [Parameter] MyEnum Style { get; set; }
+
+    [Parameter] IEnumerable<TItem> Items { get; set; }
+
+}
