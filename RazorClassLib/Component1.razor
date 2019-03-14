@@ -1,14 +1,16 @@
 ﻿
 @typeparam TItem
 
-<p>
-    Component 1 -> Style:@Style
-</p>
+@*<CascadingValue Name="CasadingValue1" Value="true">
+    @ChildContent
+</CascadingValue>*@
 
 @functions {
 
     [Parameter] MyEnum Style { get; set; }
 
     [Parameter] IEnumerable<TItem> Items { get; set; }
+
+    [Parameter] RenderFragment ChildContent { get; set; }
 
 }
